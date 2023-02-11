@@ -1,4 +1,5 @@
 /*
+Created - 19th Oct 2022 11:15 am 
 Last Modified - 20th Jan 2023 08:30 am
 Authors - Rinaldi Michael, Sumit Pal, Adaptavist, Kenneth Mcclean
 References -
@@ -6,8 +7,6 @@ https://community.atlassian.com/t5/Confluence-questions/Confluence-Scriptrunner-
 https://www.kennethmcclean.com/blog/confluence-space-permissions-management-with-groovy-and-scriptrunner/
 https://community.atlassian.com/t5/Confluence-questions/How-to-fetch-list-of-space-permissions-using-groovy-in/qaq-p/1759107
 */
-
-
 
 /*
 Functionalities
@@ -45,9 +44,7 @@ Functionalities
 
 14. Convert email address/es input to lower case
 */
-       
-       
-       
+           
 import com.onresolve.scriptrunner.parameters.annotation.GroupPicker
 import com.atlassian.crowd.embedded.api.Group
 import com.onresolve.scriptrunner.parameters.annotation.*
@@ -258,7 +255,7 @@ for(int i=0;i<email.size();)
                     printtext=printtext+" <b>${spaces[s].getName()} </b>"+","
                     s++
                 }
-                printtext=printtext++" with <b>${permissionsInput}</b> permissions <br>"
+                printtext=printtext+" with <b>${permissionsInput}</b> permissions <br>"
             }
         }
         else
