@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Created - 19th Oct 2022 11:15 am
-//Last Modified - 28th Feb 2023 01:21 pm
+//Last Modified - 20th Mar 2023 8:55 am
 //Authors - Rinaldi Michael, Sumit Pal, Adaptavist, Kenneth Mcclean
 //References -
 //https://community.atlassian.com/t5/Confluence-questions/Confluence-Scriptrunner-Copy-users-from-space-permissions-to-the/qaq-p/1597679
@@ -45,8 +45,7 @@ Functionalities
 
 14. Convert email address/es input to lower case
 */
-           
-
+          
             
 import com.onresolve.scriptrunner.parameters.annotation.GroupPicker
 import com.atlassian.crowd.embedded.api.Group
@@ -414,8 +413,9 @@ for(int i=0;i<email.size();)
 }//end of try block
          
 catch (Exception ex)
-{
-    printtext=printtext+"<h1><b><center>Oops...Something went wrong. Make sure the inputs are correct and please try again</h1></b></center>"
+{        
+    printtext=printtext+"<h1><b><center>Oops...Something went wrong!</h1></b></center>"
+    printtext+="<br>${ex}"
 }
             
 return printtext
