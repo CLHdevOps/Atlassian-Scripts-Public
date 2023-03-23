@@ -6,15 +6,10 @@
 /*
 Functionalities
 1.  Deactivate users in Jira using dynamic forms
-
 2. Provide the directory ID
-
 3. If accidentally deactivated. Just select activate and run the script again.
-
 4. Prints out details of actions performed
-
 5. Change delimiter by modifying the below line to any character of choice:
-
                       userNameStringsarray=userNameStrings.split(',')
 */
       
@@ -43,7 +38,7 @@ String printtext
 @UserPicker(description = 'Field not Mandatory. This cell does not play a role in this script. It is only used to verify if the account already exists', label = 'User Checker. Enter the username or Full Name', multiple = true)
 def user
       
-@ShortTextInput(description = 'Internal Directory: 1<br>SailPoint Directory: 10000 for PRD, 10100 for DTA', label = 'Enter Directory ID')
+@ShortTextInput(description = 'Internal Directory: 1<br>Enter the Directory ID from user directory settings in Jira for any external directory', label = 'Enter Directory ID')
 String directoryId
  
 printtext+="<h2><b>List of Users from Directory Number: ${directoryId}</h2></b><br>"
