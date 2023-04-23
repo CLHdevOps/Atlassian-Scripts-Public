@@ -80,7 +80,7 @@ def permissionManager = ComponentLocator.getComponent(PermissionManager)
 @UserPicker(description = 'User Checker. This does not perform any operation. It is only to search for any existing users.', label = 'User Checker', multiple = true)
 def userchecker
             
-String printtext
+String printtext=""
          
 //start of try block
 try
