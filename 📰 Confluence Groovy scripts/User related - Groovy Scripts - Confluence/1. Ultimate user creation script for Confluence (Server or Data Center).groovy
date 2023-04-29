@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Created - 19th Oct 2022 11:15 am
-//Last Modified - 20th Mar 2023 8:55 am
+//Last Modified - 29th April 2023, 07:39 am
 //Authors - Rinaldi Michael, Sumit Pal, Adaptavist, Kenneth Mcclean
 //References -
 //https://community.atlassian.com/t5/Confluence-questions/Confluence-Scriptrunner-Copy-users-from-space-permissions-to-the/qaq-p/1597679
@@ -119,7 +119,7 @@ displayNames=displayNameinput.split(',')
 List<Group> GroupToUse
        
 //Enter password
-@ShortTextInput(description = 'Enter a password or type in N/A for random password generation. For multiple users enter a comma separated list of passwords. Combinations of passwords and N/A in the comma separated list are also allowed similar to the Display Name input.', label = 'Enter Password (TEXT VISIBLE)(Required🌟)')
+@ShortTextInput(description = 'Enter a password or type in N/A for random password generation. For multiple users enter a comma separated list of passwords. Combinations of passwords and N/A in the comma separated list are also allowed similar to the Display Name input. Entering N/A once will generate random passwords for all user accounts.', label = 'Enter Password (TEXT VISIBLE)(Required🌟)')
 String passwordInput
        
 String[] passwords
