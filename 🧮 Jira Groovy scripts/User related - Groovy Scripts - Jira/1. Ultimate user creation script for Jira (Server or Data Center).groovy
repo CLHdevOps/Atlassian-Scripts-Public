@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Created - 6th Oct 2022 09:30 am
-//Last Modified - 20th Mar 2023 8:55 am
+//Last Modified - 29th April 2023, 07:37 am
 //Authors - Rinaldi Michael, Sumit Pal, Adaptavist
 //References -
 //https://library.adaptavist.com/
@@ -113,7 +113,7 @@ displayNames=displayNameinput.split(',')
 List<Group> groupone
           
 //Enter password
-@ShortTextInput(description = 'Enter a password or type in N/A for random password generation. For multiple users enter a comma separated list of passwords. Combinations of passwords and N/A in the comma separated list are also allowed similar to the Display Name input.', label = 'Enter Password (TEXT VISIBLE)(Required🌟)')
+@ShortTextInput(description = 'Enter a password or type in N/A for random password generation. For multiple users enter a comma separated list of passwords. Combinations of passwords and N/A in the comma separated list are also allowed similar to the Display Name input. Entering N/A once will generate random passwords for all accounts.', label = 'Enter Password (TEXT VISIBLE)(Required🌟)')
 String passwordInput
       
 String[] passwords
