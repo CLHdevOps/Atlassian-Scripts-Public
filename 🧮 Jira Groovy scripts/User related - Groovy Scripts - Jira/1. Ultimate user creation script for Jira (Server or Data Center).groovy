@@ -4,6 +4,40 @@
 //Authors - Rinaldi Michael, Sumit Pal, Adaptavist
 //References -
 //https://library.adaptavist.com/
+/*
+Functionalities
+1. Create users in Jira using Dynamic forms.
+
+2. Provide multiple email addresses, project roles and names in a comma separated list. 
+
+3. Change the separation character from a comma to any other character of choice by modifying (',') to ('\') for example in the below 3 lines accordingly:
+
+            emailAddresses=emailAddressinput.split(',')
+
+            displayNames=displayNameinput.split(',')
+
+            roleNames=roleNameInput.split(',') 
+
+4. Select multiple groups 
+
+5. Select multiple projects
+
+6. Auto fill Full Name by entering N/A. Details in it's usage is mentioned in the forms description
+
+7. Reactivate an account if it already exists and is deactivated.
+
+8. Fail safe to add existing accounts to groups or projects chosen.
+
+9. User picker to help verify account's existence.
+
+10. Prints out details of actions performed.
+
+11. Catch errors in code.
+
+12. Provide password or create random password
+
+13. Convert email address/es input to lower case
+*/
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
  
