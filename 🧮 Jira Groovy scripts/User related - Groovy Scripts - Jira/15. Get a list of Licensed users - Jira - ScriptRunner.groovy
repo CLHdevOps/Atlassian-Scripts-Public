@@ -6,7 +6,8 @@
 //https://community.atlassian.com/t5/Jira-Software-questions/To-extract-all-JIRA-users-and-their-last-access-date/qaq-p/1613347
 //https://community.atlassian.com/t5/Jira-Service-Management/get-the-creation-date-of-a-user/qaq-p/802290
 //This script was created for a rest endpoint. Hence, the map output instead of a tabular format. 
-//Groups that count towards the license need to be manually entered in script. Can be found in the application's Global Permissions
+//Groups that count towards the license need to be manually entered in script. 
+//Licensed groups can be found using https://github.com/Rinaldi-James-Michael/Atlassian-Scripts-Public/blob/main/%F0%9F%A7%AE%20Jira%20Groovy%20scripts/Group%20related%20-%20Groovy%20scripts%20-%20Jira/11.%20Get%20a%20list%20of%20groups%20that%20count%20towards%20the%20Jira%20license.groovy
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    
 import java.lang.String
