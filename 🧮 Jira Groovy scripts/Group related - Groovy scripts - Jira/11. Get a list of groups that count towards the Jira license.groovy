@@ -26,7 +26,7 @@ def defaultApplicationRoleManager = ComponentAccessor.getComponent(DefaultApplic
              
 String printtext="<b>Jira groups that count towards the license are:</b><br><br>"
  
-def allLicensedGroupRoles = defaultApplicationRoleManager.getRoles()[1].groups
+def allLicensedGroupRoles = defaultApplicationRoleManager.getRoles()[0].groups
 for(int l=0;l<allLicensedGroupRoles.size();l++)
 {
     printtext+="${l+1}. ${allLicensedGroupRoles[l].getName()}<br>"
